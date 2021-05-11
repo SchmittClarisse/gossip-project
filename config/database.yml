@@ -23,13 +23,13 @@ default: &default
 
 development:
   <<: *default
-  database: gossip-project_development
+  database: the_gossip_project_development
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
   # When left blank, postgres will use the default role. This is
   # the same name as the operating system user that initialized the database.
-  #username: gossip-project
+  #username: the_gossip_project
 
   # The password associated with the postgres role (username).
   #password:
@@ -57,7 +57,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: gossip-project_test
+  database: the_gossip_project_test
 
 # As with config/secrets.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -80,6 +80,6 @@ test:
 #
 production:
   <<: *default
-  database: gossip-project_production
-  username: gossip-project
-  password: <%= ENV['GOSSIP-PROJECT_DATABASE_PASSWORD'] %>
+  database: the_gossip_project_production
+  username: the_gossip_project
+  password: <%= ENV['THE_GOSSIP_PROJECT_DATABASE_PASSWORD'] %>
